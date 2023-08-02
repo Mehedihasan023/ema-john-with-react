@@ -42,4 +42,5 @@ Product.propTypes = {
     handleAddToCart: PropTypes.func.isRequired,
 };
 
+
 export default Product;
