@@ -36,6 +36,9 @@
   background: #ffe0b3;
   position: absolute;
   bottom: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-cart:hover {
   background-color: orange;
