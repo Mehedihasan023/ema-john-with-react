@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 // import React from 'react';
-import PropTypes from 'prop-types';
 import './Cart.css';
 const Cart = ({ cart }) => {
     // const {cart}=props
@@ -25,10 +25,5 @@ const Cart = ({ cart }) => {
         </div>
     );
 };
-
-Cart.propTypes = {
-    cart: PropTypes.array.isRequired,
-};
-
 
 export default Cart;

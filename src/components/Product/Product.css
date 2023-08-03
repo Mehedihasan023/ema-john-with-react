@@ -36,11 +36,15 @@
   background: #ffe0b3;
   position: absolute;
   bottom: 0;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .btn-cart:hover {
   background-color: orange;
-  color:white;
+  color: white;
+}
+.cart-icon {
+  width: 25px;
+  height: 15px;
 }
