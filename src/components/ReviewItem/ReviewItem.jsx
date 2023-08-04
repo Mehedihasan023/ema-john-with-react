@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { TrashIcon } from '@heroicons/react/24/solid'
+import { TrashIcon } from '@heroicons/react/24/solid';
 import './ReviewItem.css'
 const ReviewItem = ({ product,handleRemoveFromCart }) => {
     const { id, img, price, name, quantity } = product;
