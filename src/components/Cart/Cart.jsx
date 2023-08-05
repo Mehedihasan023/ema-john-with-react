@@ -2,7 +2,7 @@
 // import React from 'react';
 import { TrashIcon } from '@heroicons/react/24/solid';
 import './Cart.css';
-const Cart = ({ cart, handleClearCart}) => {
+const Cart = ({ cart, handleClearCart, children}) => {
     // const {cart}=props
     let totalPrice = 0;
     let totalShipping = 0;
@@ -23,10 +23,11 @@ const Cart = ({ cart, handleClearCart}) => {
             <p>Total Shipping: ${totalShipping}</p>
             <p>Tax: ${tax.toFixed(2)}</p>
             <h6>Grand Total: ${grandTotal.toFixed(2)}</h6>
-            <buuton onClick={handleClearCart} className='btn-clear-cart'>
+            <button onClick={handleClearCart} className='btn-clear-cart'>
                 <span>Clear Cart</span>
             <TrashIcon className="cart-delete-icon" />
-            </buuton>
+            </button>
+            {children}
         </div>
     );
 };

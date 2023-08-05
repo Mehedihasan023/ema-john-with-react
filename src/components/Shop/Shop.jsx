@@ -1,10 +1,12 @@
 // import React from 'react';
 import { useState } from 'react';
 import './Shop.css';
+import { TrashIcon,ArrowSmallRightIcon } from '@heroicons/react/24/solid';
 import { useEffect } from 'react';
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 import { addToDb, deleteShoppingCart, getShoppingCart } from '../../utilities/fakedb';
+import { Link } from 'react-router-dom';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
@@ -70,7 +72,13 @@ const handleClearCart =()=>{
                 <Cart 
                 cart={cart}
                 handleClearCart={handleClearCart}
-                ></Cart>
+                >
+                <Link className='proceed-link' to='/orders'>
+                <button className='btn-proceed'>Review Order
+                <ArrowSmallRightIcon className="cart-delete-icon" />
+                </button>
+                </Link>
+                </Cart>
             </div>
         </div>
     );

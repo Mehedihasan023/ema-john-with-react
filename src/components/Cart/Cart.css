@@ -4,13 +4,13 @@
   position: sticky;
   top: 0;
 }
-.cart .cart-delete-icon {
+.cart-delete-icon {
   width: 15px;
   height: 15px;
   padding: 5px;
   color: white;
 }
-.cart .btn-clear-cart {
+.btn-clear-cart {
   width: 90%;
   height: 30px;
   font-size: 15px;
@@ -23,4 +23,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border:0;
 }
