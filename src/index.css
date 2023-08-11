@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
 
-  
+  font-family: 'Lato', sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,6 +27,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
 /* 
 h1 {
   font-size: 3.2em;
