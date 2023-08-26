@@ -4,7 +4,7 @@ import React from 'react';
 import { TrashIcon } from '@heroicons/react/24/solid';
 import './ReviewItem.css'
 const ReviewItem = ({ product,handleRemoveFromCart }) => {
-    const { id, img, price, name, quantity } = product;
+    const { _id, img, price, name, quantity } = product;
     return (
         <div className='review-item'>
             <img src={img} alt="" />
@@ -14,7 +14,7 @@ const ReviewItem = ({ product,handleRemoveFromCart }) => {
                 <p>Order Quantity: <span className='orange-text'>{quantity}</span></p>
                 <p></p>
             </div>
-            <button onClick={()=>handleRemoveFromCart(id)} className='btn-delete'><TrashIcon className="delete-icon" /> </button>
+            <button onClick={()=>handleRemoveFromCart(_id)} className='btn-delete'><TrashIcon className="delete-icon" /> </button>
         </div>
     );
 };

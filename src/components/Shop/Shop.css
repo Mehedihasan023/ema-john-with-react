@@ -2,15 +2,18 @@
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
+
 .products-container {
   margin: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
 }
+
 .proceed-link {
   text-decoration: none;
 }
+
 .btn-proceed {
   border: 0;
   background-color: #ff9900;
@@ -25,4 +28,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.pagination{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.pagination button{
+  margin-right: 4px;
+}
+.pagination .selected{
+  background-color:#ff9900;
 }
